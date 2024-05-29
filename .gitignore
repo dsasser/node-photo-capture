@@ -131,3 +131,6 @@ dist
 
 # ignore captured photos directory
 captured_photos
+
+# OSX
+.DS_Store
