@@ -1,6 +1,7 @@
 const Webcam = require("node-webcam");
 const fs = require("fs");
 const { mkdirp } = require('mkdirp')
+const delayMilliseconds = 60000;
 
 // Options for the webcam
 const opts = {
@@ -38,5 +39,5 @@ function captureImage() {
     });
 }
 
-// Capture an image every 10 seconds
-setInterval(captureImage, 10000);
+// Capture an image every x milliseconds.
+setInterval(captureImage, delayMilliseconds);
